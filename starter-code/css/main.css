@@ -3,8 +3,53 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
-
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin:100px;
+}
+h1{
+  color: #1c5380;
+  margin:0;
+}
+.login{
+  background-color: #1c5380;
+  color: lightgrey;
+  padding: 20px;
+  grid-column: 3/4;
+}
+.login p{
+  margin: 0;
+  display: inline;
+}
+.phone{
+  grid-column: 1/2;
+  grid-row: 1/3;
+  text-align: center;
+}
+.insta{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.presentation{
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+footer{
+  background-color: white
+  margin-top: 50px;
+  text-align: center;
+  grid-column: 1/3;
+  display: inline;
+  grid-row: 3/4;
+  float: left;
+}
+footer a {
+  padding: 0 10px;
+  color:#1c5380;
+  font-weight: bold;
+  text-decoration: none;
 }
